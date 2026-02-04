@@ -1,0 +1,26 @@
+print("Hello, world!")
+print(42)
+print("The answer is", 42)
+print("Line 1\nLine 2\nLine 3")
+print("""This is line 1.
+This is line 2.
+This is line 3.""")
+# This is a comment line.
+# Python skips this when executing.
+
+print("This will run.")  # This is an inline comment
+
+my_variable = "a string"
+age = 25
+pi = 3.14
+
+
+my_name = "Jaël"
+_name = "Andre"
+name1 = "Student"
+
+name = "Danny"
+print(name)
+
+user_age = input("What is your age? ")
+print("Wow, you look good for " + user_age)
