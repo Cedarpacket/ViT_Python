@@ -8,11 +8,13 @@ taxPercentage = 0.18
 taxAmount = subtotal * taxPercentage
 # d. assign a variable 'total' to the sum of subtotal and tax_amount
 total = subtotal + taxAmount
+# reassigning taxamount and total to be rounded to the 100th place.
 taxAmount = round(taxAmount, 2)
 total = round(total, 2)
+# printing
 print(f"Subtotal: ${subtotal}")
 print(f"Tax Percentage: {taxPercentage * 100} %")
-print(f"Tax Amount: ${taxAmount}", ) # rounded to 2 decimal places for currency format
-print(f"Total: ${total}", ) # rounded to 2 decimal places for currency format
-
+print(f"Tax Amount: ${taxAmount}") # rounded to 2 decimal places for currency format
+print(f"Total: ${total}") # rounded to 2 decimal places for currency format
+# no instant closing
 input("")

@@ -1,80 +1,41 @@
-import math
+# import math
 
-a = 1
-b = 2
-c = 3.5
+# a = 1
+# b = 2
+# c = 3.5
 
-mod_ceil = math.ceil(3.94)
-print(mod_ceil)
+# mod_ceil = math.ceil(3.94)
+# print(mod_ceil)
 
-mod_ceil += 6
-print(mod_ceil)
+# mod_ceil += 6
+# print(mod_ceil)
 
-mod_ceil **= 2
-print(mod_ceil)
+# mod_ceil **= 2
+# print(mod_ceil)
 
-# Example of dictionary usage
-dict_example = {
-    "name": "Alice",
-    "age": 30,
-    "city": "New York"
-}
-print(dict_example["name"])
-dict_example["age"]
-print(dict_example["age"])
-dict_example["profession"] = "Engineer"
+# # Casting example
+# num_str = "42"
+# num_int = int(num_str)
+# print(num_int + 8)
 
-# Casting example
-num_str = "42"
-num_int = int(num_str)
-print(num_int + 8)
+# # casting!
+# age = int(input("Enter your age: "))
+# age += 1
+# print(f"Next year, you will be: {age}")
+# name = input("Enter your name: ")
+# print(f"Oh no:, {name * age}!")
 
-# casting!
-age = int(input("Enter your age: "))
-age += 1
-print(f"Next year, you will be: {age}")
-name = input("Enter your name: ")
-print(f"Oh no:, {name * age}!")
-# Character Creation Exercise
-import random
+students = ['Jenny', 'Erin', 'Amanda', 'Kruti', 'Stephanie', 'Brian', 'Alvin']
 
-# Die class
-class Die:
-    def __init__(self, sides):
-        self.sides = sides
+oldStudentsList = students[:]
 
-    def roll(self):
-        return random.randint(1, self.sides)
+# print(f"Students: {students[::3]}")
 
+print(f"{students}")
+print(f"{oldStudentsList}")
 
-# Create a 20-sided die
-d20 = Die(20)
+students[0] = 'Me'
 
+print(f"{students}")
+print(f"{oldStudentsList}")
 
-# Character class
-class Character:
-    def __init__(self, name):
-        self.name = name
-        self.strength = d20.roll()
-        self.intelligence = d20.roll()
-        self.constitution = d20.roll()
-        self.agility = d20.roll()
-
-    def display_info(self):
-        print(f"Character Name: {self.name}")
-        print(f"Strength: {self.strength}")
-        print(f"Intelligence: {self.intelligence}")
-        print(f"Constitution: {self.constitution}")
-        print(f"Agility: {self.agility}")
-
-
-# ---- PROGRAM EXECUTION ----
-
-# Get user input
-name = input("Enter character name: ")
-
-# Create character
-player = Character(name)
-
-# Display character stats
-player.display_info()

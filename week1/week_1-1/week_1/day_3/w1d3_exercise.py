@@ -1,6 +1,6 @@
 # ITP Week 1 Day 3 Exercise
 
-us_states = ["Alabama",
+usStates = ["Alabama",
 "Alaska",
 "Arizona",
 "Arkansas",
@@ -53,11 +53,10 @@ us_states = ["Alabama",
 ]
 
 # print the LENgth of us_states
-print(len(us_states))
+print(len(usStates))
 # print the comparison boolean of the LENgth of us_states to 50
-print(len(us_states) == 50)
+print(len(usStates) == 50) # print(bool(len(usStates) == 50)) could have worked but its redundant
 # create a variable my_state_index and assign the index value of the state you currently reside in
-my_state_index = us_states.index("California") # Not where I live but it's my home state.
+myStateIndex = usStates.index("California")
 # print us_state with my_state_index to ACCESS your state!
-print(us_states[my_state_index])
-input("")
+print(usStates[myStateIndex])

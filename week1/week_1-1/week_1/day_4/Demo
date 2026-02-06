@@ -1,0 +1,19 @@
+# students = ['Me', 'Jenny','Erin','Amanda','Kruti','Stephanie',
+#             'Brian','Alvin','Chris']
+
+# print(f"Students List A: {students}")
+
+# students.pop(2)
+
+# print(f"Students List B: {students}")
+# print(f"Students List B: {students.pop()}")
+x = 0
+
+def updateX(x):
+    x += 1
+    x *= x
+    return x
+
+while True:
+    x = updateX(x)
+    print(x)

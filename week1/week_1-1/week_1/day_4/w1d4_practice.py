@@ -1,6 +1,6 @@
 # ITP Week 1 Day 4 (In-Class) Practice
 
-us_state = ["Alabama",
+usStates = ["Alabama",
 "Alaska",
 "Arizona",
 "Arkansas",
@@ -53,22 +53,24 @@ us_state = ["Alabama",
 ]
 
 # 1. Write the code below that verifies the amount (length) of US States!
-
+if (len(usStates) == 50):
+    print(f"The number of States the USA has is: {len(usStates)}")
+else:
+    print (f"The number of States the USA has is not: {len(usStates)}")
 # 2. create a variable my_state_index and assign the index value of the state you currently reside in
-
+myStateIndex = usStates.index("California")
 # 3. let's see if you were right.. uncomment below and run. Do you see your state?
-
-# print("My state is: " + us_state[my_state_index])
-
+print("My state is: " + usStates[myStateIndex])
 # 4.Using your state index, let's emphasize some importance to it by *upper*casing it.
     # ASSIGN us_state with my_state_index with us_state of my_state_index with the UPPER method
-
+usStates[myStateIndex] = str(usStates[myStateIndex]).upper()
 # PRINT us_state to see if there is a change in your state
-
+print(usStates)
 # 5. POOF. You've been promoted to President! Let's add a new state. I like my list to be alphabetical (which it is)
 # So let's go ahead and create a state that starts with Z and append it to the end of the list.
-
-
+usStates.append("Zooberbamha")
 # 6. There is no state that begins with B! Lets create one and INSERT it appropriately. (There are 4 A states.)
-
+usStates.insert(4, "Balifornia")
 # 7. Does anyone live in Iowa? Do you know anyone that lives there? Is it even real?! Remove it.. Do it president.
+usStates.remove("Iowa")
+print(usStates)
