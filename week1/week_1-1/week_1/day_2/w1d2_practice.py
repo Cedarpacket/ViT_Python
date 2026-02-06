@@ -8,10 +8,11 @@ taxPercentage = 0.18
 taxAmount = subtotal * taxPercentage
 # d. assign a variable 'total' to the sum of subtotal and tax_amount
 total = subtotal + taxAmount
+taxAmount = round(taxAmount, 2)
+total = round(total, 2)
+print(f"Subtotal: ${subtotal}")
+print(f"Tax Percentage: {taxPercentage * 100} %")
+print(f"Tax Amount: ${taxAmount}", ) # rounded to 2 decimal places for currency format
+print(f"Total: ${total}", ) # rounded to 2 decimal places for currency format
 
-print("Subtotal: $", subtotal)
-print("Tax Percentage: ", taxPercentage)
-print("Tax Amount: $", taxAmount)
-print("Total: $", total)
-
-input("\nPress Enter to Close...")
+input("")
